@@ -23,6 +23,7 @@ E ricordiamoci che console.log() è nostro amico!
 
 #### DATI PER ESERCIZIO:
 
+
 Name            Role                    Image
 Wayne Barnett	Founder & CEO	        wayne-barnett-founder-ceo.jpg
 Angela Caroll	Chief Editor	        angela-caroll-chief-editor.jpg
