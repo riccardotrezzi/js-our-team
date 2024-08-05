@@ -1,3 +1,5 @@
+/*Milestone 0 e 1 */
+
 /*Creazione oggetto*/
 
 const ourTeam = [
@@ -43,6 +45,8 @@ console.log('ourTeam', ourTeam, typeof ourTeam);
 // console.log('ourTeam[4]', ourTeam[4], typeof ourTeam[4]);
 // console.log('ourTeam[5]', ourTeam[5], typeof ourTeam[5]);
 
+const teamContainer = document.getElementById('team-container');
+
 for(let i=0; i < ourTeam.length; i++){
     console.log(ourTeam[i]);
 
@@ -50,9 +54,29 @@ for(let i=0; i < ourTeam.length; i++){
     console.log('Role:', ourTeam[i].role);
     console.log('Image:', ourTeam[i].image);
 
-    const fullInfo = `${ourTeam[i].name} - ${ourTeam[i].role} - ${ourTeam[i].image}`;
+    /*Milestone 2*/
 
-    console.log('Full info', fullInfo);
+    teamContainer.innerHTML += `
+
+        <ul>
+            <li>
+                Name: <strong>${ourTeam[i].name}</strong>
+            </li>
+            <li>
+                Role: <strong>${ourTeam[i].role}</strong>
+            </li>
+            <li>
+                Image:
+                <div>
+                    <img src="img/${ourTeam[i].image}">
+                </div>
+            </li>
+        </ul>
+
+        <hr>
+    `
 }
+
+
 
 
